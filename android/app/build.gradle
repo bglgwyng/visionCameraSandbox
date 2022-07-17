@@ -258,11 +258,20 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
+
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 
+    implementation "androidx.camera:camera-core:1.1.0-beta02"
+    implementation "androidx.camera:camera-camera2:1.1.0-beta02"
+    implementation "androidx.camera:camera-lifecycle:1.1.0-beta02"
+    implementation "androidx.camera:camera-video:1.1.0-beta02"
+
+    implementation "androidx.camera:camera-view:1.1.0-beta02"
+    implementation "androidx.camera:camera-extensions:1.1.0-beta02"
+    
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group:'com.facebook.fbjni'
     }

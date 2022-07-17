@@ -89,6 +89,7 @@ const CameraView = () => {
 
   const frameProcessor = useFrameProcessor(frame => {
     'worklet';
+    console.info(__xyz(frame));
   }, []);
   return device.front ? (
     <Camera
